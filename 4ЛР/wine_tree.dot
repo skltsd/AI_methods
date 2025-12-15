@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="alcohol <= 12.78\ngini = 0.658\nsamples = 178\nvalue = [59.0, 71.0, 48.0]\nclass = 2", fillcolor="#ebfcf2"] ;
+1 [label="malic_acid <= 2.96\ngini = 0.256\nsamples = 73\nvalue = [0, 62, 11]\nclass = 2", fillcolor="#5cea97"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="alcohol <= 12.49\ngini = 0.128\nsamples = 58\nvalue = [0, 54, 4]\nclass = 2", fillcolor="#48e78a"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 46\nvalue = [0, 46, 0]\nclass = 2", fillcolor="#39e581"] ;
+2 -> 3 ;
+4 [label="gini = 0.444\nsamples = 12\nvalue = [0, 8, 4]\nclass = 2", fillcolor="#9cf2c0"] ;
+2 -> 4 ;
+5 [label="alcohol <= 12.12\ngini = 0.498\nsamples = 15\nvalue = [0, 8, 7]\nclass = 2", fillcolor="#e6fcef"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 4\nvalue = [0, 4, 0]\nclass = 2", fillcolor="#39e581"] ;
+5 -> 6 ;
+7 [label="gini = 0.463\nsamples = 11\nvalue = [0, 4, 7]\nclass = 3", fillcolor="#c9aaf4"] ;
+5 -> 7 ;
+8 [label="alcalinity_of_ash <= 19.45\ngini = 0.553\nsamples = 105\nvalue = [59, 9, 37]\nclass = 1", fillcolor="#f7d6bf"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="malic_acid <= 1.3\ngini = 0.223\nsamples = 57\nvalue = [50, 4, 3]\nclass = 1", fillcolor="#e89253"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 4\nvalue = [0, 4, 0]\nclass = 2", fillcolor="#39e581"] ;
+9 -> 10 ;
+11 [label="gini = 0.107\nsamples = 53\nvalue = [50, 0, 3]\nclass = 1", fillcolor="#e78945"] ;
+9 -> 11 ;
+12 [label="malic_acid <= 2.18\ngini = 0.452\nsamples = 48\nvalue = [9, 5, 34]\nclass = 3", fillcolor="#ae80ee"] ;
+8 -> 12 ;
+13 [label="gini = 0.582\nsamples = 14\nvalue = [8, 3, 3]\nclass = 1", fillcolor="#f3c6a5"] ;
+12 -> 13 ;
+14 [label="gini = 0.164\nsamples = 34\nvalue = [1, 2, 31]\nclass = 3", fillcolor="#8d4ce7"] ;
+12 -> 14 ;
+}
